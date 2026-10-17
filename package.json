@@ -1,5 +1,5 @@
 {
-  "name": "shipproof",
+  "name": "shipproof-cli",
   "version": "0.1.0",
   "description": "Evidence-backed verification for AI-generated code",
   "type": "module",

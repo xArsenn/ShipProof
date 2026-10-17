@@ -26,8 +26,8 @@ ShipProof checks the repository itself:
 ## Quick start
 
 ```bash
-npx shipproof init
-npx shipproof verify
+npx shipproof-cli init
+npx shipproof-cli verify
 ```
 
 ShipProof auto-detects common npm, Python, Rust, and Go projects. Review `.shipproof.json`, then commit it so every agent and contributor is checked against the same contract.

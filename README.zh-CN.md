@@ -26,8 +26,8 @@ ShipProof 会直接检查仓库：
 ## 快速开始
 
 ```bash
-npx shipproof init
-npx shipproof verify
+npx shipproof-cli init
+npx shipproof-cli verify
 ```
 
 ShipProof 会自动识别常见的 npm、Python、Rust 和 Go 项目，并创建 `.shipproof.json`。建议检查后把它提交到仓库，让所有开发者和 AI 代理遵守同一份验收标准。
