@@ -4,3 +4,4 @@ dist/
 shipproof-report.html
 shipproof-report.json
 *.log
+*.tgz

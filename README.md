@@ -1,5 +1,8 @@
 # ShipProof
 
+[![CI](https://github.com/xArsenn/ShipProof/actions/workflows/ci.yml/badge.svg)](https://github.com/xArsenn/ShipProof/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-71e6b0.svg)](LICENSE)
+
 > Your coding agent says it is done. Make it prove it.
 
 ShipProof is a local, model-agnostic evidence layer for AI-generated code. It runs deterministic checks, records what actually happened, detects common verification loopholes, and produces a portable HTML/JSON proof report.
