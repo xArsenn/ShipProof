@@ -29,11 +29,13 @@ ShipProof checks the repository itself:
 ## Quick start
 
 ```bash
-npx shipproof-cli init
-npx shipproof-cli verify
+npx --yes --package=github:xArsenn/ShipProof shipproof init
+npx --yes --package=github:xArsenn/ShipProof shipproof verify
 ```
 
 ShipProof auto-detects common npm, Python, Rust, and Go projects. Review `.shipproof.json`, then commit it so every agent and contributor is checked against the same contract.
+
+The npm package name is reserved as `shipproof-cli`; until the first npm publication, the commands above install directly from the public GitHub repository.
 
 The result is written to:
 
