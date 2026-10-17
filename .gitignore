@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.shipproof/
+shipproof-report.html
+shipproof-report.json
+*.log

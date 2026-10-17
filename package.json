@@ -1,0 +1,39 @@
+{
+  "name": "shipproof",
+  "version": "0.1.0",
+  "description": "Evidence-backed verification for AI-generated code",
+  "type": "module",
+  "bin": {
+    "shipproof": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "action.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/rules.test.js",
+    "verify:self": "npm run build && node dist/cli.js verify --config examples/shipproof.json",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "ai",
+    "coding-agent",
+    "verification",
+    "ci",
+    "devtools",
+    "codex",
+    "claude-code",
+    "cursor"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

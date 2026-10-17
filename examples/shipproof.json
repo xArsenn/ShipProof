@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "base": "HEAD",
+  "commands": [
+    { "name": "build", "run": "npm run build", "required": true, "timeoutSeconds": 120 }
+  ],
+  "protectedPaths": [".github/workflows/**", ".shipproof.json", "shipproof.json"],
+  "testPaths": ["**/*.test.*", "**/*.spec.*", "test/**", "tests/**"],
+  "sourcePaths": ["src/**"],
+  "failOnWarnings": false,
+  "maxOutputKB": 96
+}

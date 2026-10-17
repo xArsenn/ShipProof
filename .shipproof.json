@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "base": "HEAD",
+  "commands": [
+    {
+      "name": "test",
+      "run": "npm run test",
+      "required": true,
+      "timeoutSeconds": 600
+    },
+    {
+      "name": "build",
+      "run": "npm run build",
+      "required": true,
+      "timeoutSeconds": 600
+    }
+  ],
+  "protectedPaths": [
+    ".github/workflows/**",
+    ".shipproof.json",
+    "shipproof.json"
+  ],
+  "testPaths": [
+    "**/*.test.*",
+    "**/*.spec.*",
+    "test/**",
+    "tests/**",
+    "__tests__/**"
+  ],
+  "sourcePaths": [
+    "src/**",
+    "app/**",
+    "lib/**",
+    "packages/**",
+    "cmd/**",
+    "internal/**"
+  ],
+  "failOnWarnings": false,
+  "maxOutputKB": 96
+}

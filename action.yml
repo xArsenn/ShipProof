@@ -1,0 +1,18 @@
+name: ShipProof
+description: Evidence-backed verification for AI-generated code
+author: ShipProof contributors
+inputs:
+  base:
+    description: Git ref used as the comparison base
+    required: false
+    default: HEAD^
+  config:
+    description: Path to ShipProof JSON configuration
+    required: false
+    default: .shipproof.json
+runs:
+  using: node20
+  main: dist/action.js
+branding:
+  icon: shield
+  color: green
